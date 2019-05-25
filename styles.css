@@ -1,0 +1,44 @@
+.graph-visualiser {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .load-graph-btn {
+    margin: 10px 0;
+  }
+
+  .graph-text-area {
+    width: 100%;
+  }
+
+  .canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  .canvas-wrapper {
+    overflow: auto;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+    height: 300px;
+  }
+
+  .links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+  }
+
+  .node circle {
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+
+  .node text {
+    fill: #666;
+    font-family: Helvetica;
+  }
+}
