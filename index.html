@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Graph Visualiser</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="graph-visualiser">
+    <div class="wrapper">
+      <textarea
+        class="graph-text-area form-control"
+        id="graphdata"
+        rows="4"
+        cols="50"
+      >
+      </textarea>
+      <button id="load-graph-btn" class="load-graph-btn btn btn-primary text-light" onclick="loadData()">Visualise Graph</button>
+      <div class="canvas-wrapper">
+      <svg class="canvas" width="200" height="200"></svg>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="index.js"></script>
+  </div>
+</body>
+</html>
