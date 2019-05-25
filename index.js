@@ -108,7 +108,6 @@ function renderGraph(graph) {
   simulation.nodes(graph.nodes).on("tick", ticked);
 
   simulation.force("link").links(graph.links);
-  // https://bl.ocks.org/mapio/53fed7d84cd1812d6a6639ed7aa83868
   svg.call(
     d3
       .zoom()
